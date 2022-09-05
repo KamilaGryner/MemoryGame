@@ -1,0 +1,82 @@
+body {
+    font-family:sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    min-height: 100vh;
+    margin: 0;
+}
+
+.game-board {
+    margin:30px auto;
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: 5px;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.game-tile {
+    cursor: pointer;
+    background: #f6da17;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+    transition: 0.4s background-color, 0.4s box-shadow;
+}
+
+.game-tile:hover {
+    background-color:#F7C11A;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.game-score {
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background: tomato;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+
+/* -------------------------------------------------- */
+button.button,
+input[type=button].button,
+input[type=submit].button {
+    display: block;
+    max-width: 20em;
+    text-align: center;
+    padding: 1.3em 3em;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #FFF;
+    text-decoration: none;
+    margin: 2em auto;
+    background: tomato;
+    border-radius: 3em;
+    line-height: 1.1em;
+    text-shadow: none;
+    transition: 0.5s background-color, 0.5s box-shadow;
+    box-shadow: 0 2px 5px rgba(255, 99, 71, 0.4);
+    border:0;
+    cursor: pointer;
+}
